@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Diseño UX para web · Sitios consultivos en tu dominio · Bogotá</title>
+<meta name="description" content="Diseño y publico sitios web consultivos en el dominio de tu empresa: una landing, hasta dos flujos y versión móvil. Cuatro semanas, dos revisiones.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+
+<!-- ============ HERO: carpetas ============ -->
+<header class="hero" id="inicio">
+  <div class="hero__top">
+    <span></span>
+    <p class="hero__brand">Diseñador UX · Bogotá</p>
+    <a class="hero__link" href="#contacto">Contacto</a>
+  </div>
+  <h1>Diseño UX para web</h1>
+  <p class="hero__lede">Diseño y publico sitios consultivos en el dominio de tu empresa, pensados primero para el celular.</p>
+
+  <nav class="stack" aria-label="Secciones">
+    <a class="folder f1" href="#que-hago"><span class="tab">Qué hago</span></a>
+    <a class="folder f2" href="#armar"><span class="tab">Arma tu sitio</span></a>
+    <a class="folder f3" href="#proceso"><span class="tab">Proceso</span></a>
+    <a class="folder f4" href="#precios"><span class="tab">Precios</span></a>
+    <a class="folder f5" href="#contacto"><span class="tab">Contacto</span>
+      <span class="f5__txt">Una página consultiva: explica y orienta, sin pagos ni formularios.</span>
+    </a>
+  </nav>
+</header>
+
+<main>
+
+<!-- ============ INTRO: tiles ============ -->
+<section class="intro" id="que-hago" aria-labelledby="t-intro">
+  <div class="tiles">
+    <div class="tile tile--a">
+      <h2 id="t-intro" data-reveal>Sitios que orientan.</h2>
+    </div>
+    <div class="tile tile--b"><p data-reveal style="--i:1">4 semanas</p></div>
+    <div class="tile tile--c">
+      <div class="ui sitemap" data-ui data-reveal style="--i:2">
+        <p class="ui__title">Mapa del sitio</p>
+        <ul>
+          <li class="n0"><span class="node node--dark">Landing principal</span>
+            <ul>
+              <li><span class="node">Flujo 1: consultar</span></li>
+              <li><span class="node">Flujo 2: dividir</span></li>
+              <li><span class="node node--opt">Interna de socios</span></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="tile tile--d">
+      <p data-reveal>Soy diseñador UX en Bogotá. Diseño y publico sitios web consultivos: páginas que explican y orientan, sin pagos ni carrito. Tu empresa pone la información y yo la segmento, armo la arquitectura, diseño una landing principal y hasta dos flujos para consultar o dividir contenidos, y la optimizo para el celular. Si lo necesitas, suma una página interna para tus socios, con su contacto o el organigrama. Todo se publica en el dominio de tu empresa, en un mes y con dos revisiones. Si todavía no tienes manual de marca ni logos en SVG, también puedo ayudarte a ordenarlos.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FEATURES: salida fija, controles vivos ============ -->
+<section class="build" id="armar" aria-labelledby="t-build">
+  <div class="build__head"><h2 id="t-build" data-reveal>Arma tu sitio</h2></div>
+  <div class="build__out">
+    <div class="out" data-ui>
+      <div class="art" id="art" data-mode="narrow" data-flows="0" data-socios="off" data-brand="mine">
+        <div class="art__bar">
+          <span class="art__logo"></span>
+          <nav class="art__tabs" aria-hidden="true">
+            <b>Inicio</b>
+            <span data-show="f1">Servicios</span>
+            <span data-show="f2">Equipo</span>
+            <span data-show="socios">Socios</span>
+          </nav>
+        </div>
+        <div class="art__hero">
+          <p class="art__h">Tu empresa, explicada con claridad</p>
+          <p class="art__p">Lo que haces, para quién y cómo contactarte, en una sola página.</p>
+        </div>
+        <div class="art__sec" data-show="f1">
+          <p class="art__h2">Servicios</p>
+          <ul><li>Consultoría</li><li>Acompañamiento</li><li>Capacitación</li></ul>
+        </div>
+        <div class="art__sec" data-show="f2">
+          <p class="art__h2">Equipo</p>
+          <ul><li>Dirección</li><li>Operaciones</li><li>Atención</li></ul>
+        </div>
+        <div class="art__sec art__sec--org" data-show="socios">
+          <p class="art__h2">Socios</p>
+          <div class="org"><i></i><i></i><i></i><i></i></div>
+        </div>
+      </div>
+      <p class="out__total" aria-live="polite"><strong id="b-total">$2.500.000</strong><span id="b-note">Sitio en dos pagos de $1.250.000</span></p>
+    </div>
+  </div>
+
+  <div class="build__col">
+
+    <div class="blk" data-reveal>
+      <h3>Una landing y hasta dos flujos.</h3>
+      <p>La página principal presenta a tu empresa. Cada flujo adicional separa la información para que cada visitante encuentre lo suyo.</p>
+      <div class="ctl" role="radiogroup" aria-label="Flujos adicionales" data-ctl="flows">
+        <button type="button" role="radio" aria-checked="true" data-v="0">Ninguno</button>
+        <button type="button" role="radio" aria-checked="false" data-v="1">1 flujo</button>
+        <button type="button" role="radio" aria-checked="false" data-v="2">2 flujos</button>
+      </div>
+    </div>
+
+    <div class="blk" data-reveal>
+      <h3>Una interna para tus socios.</h3>
+      <p>Opcional: una página con su contacto o el organigrama de tu empresa.</p>
+      <div class="ctl ctl--switch" data-ctl="socios">
+        <button type="button" role="switch" aria-checked="false" aria-label="Interna para socios"><span class="sw"></span><span class="sw__t">Sin interna</span></button>
+      </div>
+    </div>
+
+    <div class="blk" data-reveal>
+      <h3>Primero el celular.</h3>
+      <p>El diseño se optimiza para móvil desde el principio y después se adapta a pantallas grandes.</p>
+      <div class="ctl" role="radiogroup" aria-label="Pantalla" data-ctl="mode">
+        <button type="button" role="radio" aria-checked="true" data-v="narrow">Celular</button>
+        <button type="button" role="radio" aria-checked="false" data-v="wide">Escritorio</button>
+      </div>
+    </div>
+
+    <div class="blk" data-reveal>
+      <h3>Con tu marca o con una nueva.</h3>
+      <p>Si ya tienes manual de marca y logos en SVG, los uso. Si no, hay acondicionamiento básico o creación completa.</p>
+      <div class="ctl" role="radiogroup" aria-label="Marca" data-ctl="brand">
+        <button type="button" role="radio" aria-checked="true" data-v="mine">Ya la tengo</button>
+        <button type="button" role="radio" aria-checked="false" data-v="basic">Básico</button>
+        <button type="button" role="radio" aria-checked="false" data-v="new">Completa</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ HOW: una tarjeta, cuatro campos ============ -->
+<section class="how" id="proceso" aria-label="Proceso de trabajo">
+  <div class="field field--1">
+    <h2 data-reveal>Cómo trabajamos</h2>
+    <article class="card" data-ui>
+      <header><b>Tu sitio web</b><span class="chip">Recibiendo</span></header>
+      <ul class="check">
+        <li class="on">Manual de marca</li>
+        <li class="on">Logos en SVG</li>
+        <li class="on">Paleta de colores</li>
+        <li>Información de la empresa</li>
+      </ul>
+      <footer><span class="box on"></span>50 % para empezar</footer>
+    </article>
+    <p class="clause" data-reveal style="--i:1">Primero me entregas tu información.</p>
+  </div>
+  <div class="field field--2">
+    <article class="card" data-ui>
+      <header><b>Tu sitio web</b><span class="chip chip--dark">Revisión 1 de 2</span></header>
+      <div class="prev"><i></i><i></i><i class="w"></i></div>
+      <footer>Comentarios de la semana 1</footer>
+    </article>
+    <p class="clause" data-reveal>Semana 1: ves el primer diseño.</p>
+  </div>
+  <div class="field field--3">
+    <article class="card" data-ui>
+      <header><b>Tu sitio web</b><span class="chip chip--dark">Revisión 2 de 2</span></header>
+      <ul class="check">
+        <li class="on">Primera revisión</li>
+        <li class="now">Última revisión</li>
+        <li>Publicación</li>
+      </ul>
+      <div class="bar"><i style="width:72%"></i></div>
+    </article>
+    <p class="clause" data-reveal>Semana 3: la última revisión.</p>
+  </div>
+  <div class="field field--4">
+    <article class="card card--light" data-ui>
+      <header><b>Tu sitio web</b><span class="chip chip--ok">Publicado</span></header>
+      <p class="url">tudominio.co</p>
+      <ul class="check">
+        <li class="on">Revisión 1</li>
+        <li class="on">Revisión 2</li>
+        <li class="on">50 % restante pagado</li>
+      </ul>
+    </article>
+    <p class="clause" data-reveal>Semana 4: sale al aire.</p>
+  </div>
+</section>
+
+<!-- ============ PRICING: dos campos ============ -->
+<section class="pricing" id="precios" aria-label="Precios">
+  <div class="plan plan--brand">
+    <h2 data-reveal>Marca</h2>
+    <p class="plan__who" data-reveal style="--i:1">Para quien no tiene manual de marca ni logos en SVG.</p>
+    <div class="ctl ctl--onsky" role="radiogroup" aria-label="Servicio de marca" data-ctl="plan">
+      <button type="button" role="radio" aria-checked="true" data-v="basic">Básico</button>
+      <button type="button" role="radio" aria-checked="false" data-v="full">Completa</button>
+    </div>
+    <p class="plan__inc" id="plan-inc">Estilizo tus logos en SVG, armo un manual de marca básico y te entrego un listado de deudas técnicas: las mejoras que el presupuesto no alcanza a cubrir.</p>
+    <div class="plan__foot"><p class="plan__price"><strong id="plan-price">$1.500.000</strong><span id="plan-note">COP, aparte del sitio</span></p></div>
+  </div>
+  <div class="plan plan--web">
+    <h2 data-reveal>Sitio web</h2>
+    <p class="plan__who" data-reveal style="--i:1">Landing, hasta dos flujos, versión móvil, dos revisiones y publicación.</p>
+    <p class="plan__inc">Incluye la arquitectura de la información, el diseño de la landing principal y de hasta dos flujos adicionales, y la publicación en el dominio de tu empresa. Se paga en dos partes iguales: la primera para empezar y la segunda para publicar. No incluye mantenimiento.</p>
+    <div class="plan__foot"><p class="plan__price"><strong>$2.500.000</strong><span>COP, en dos pagos de $1.250.000</span></p></div>
+  </div>
+</section>
+
+<!-- ============ FAQ: una banda por pregunta ============ -->
+<section class="faq" id="preguntas" aria-labelledby="t-faq">
+  <div class="band band--head"><h2 id="t-faq" data-reveal>Lo que suelen preguntar</h2></div>
+  <div class="band band--sand"><h3>¿Y si no tengo manual de marca ni logos en SVG?</h3><p>Hay un servicio de acondicionamiento básico de marca por $1.500.000: estilizo tus logos en SVG, armo un manual de marca básico y te entrego un listado de deudas técnicas. Si prefieres crear la marca desde cero, la creación completa parte de $2.500.000.</p></div>
+  <div class="band band--sky"><h3>¿Qué necesito aportar?</h3><p>El manual de marca, los logos en SVG, la paleta de colores, toda la información de tu empresa y el acceso al dominio donde publicaré el sitio.</p></div>
+  <div class="band band--sand"><h3>¿Cuántas revisiones incluye?</h3><p>Dos. La primera llega en la semana 1 y la última en la semana 3, para dejar la semana 4 libre para los últimos ajustes y la publicación.</p></div>
+  <div class="band band--sky"><h3>¿Cómo se paga?</h3><p>Empezamos con el 50 %. El sitio se publica cuando está pagado el 50 % restante.</p></div>
+  <div class="band band--sand"><h3>¿Qué es una deuda técnica?</h3><p>Es el listado de mejoras que no se pueden abarcar porque el presupuesto del sitio no las cubre. Quedan escritas para que las retomes cuando quieras.</p></div>
+  <div class="band band--sky"><h3>¿Qué no incluye?</h3><p>Más de dos flujos adicionales, más de dos revisiones, funciones transaccionales como pagos o carrito, trabajo de marca que no hayas contratado, dominio y hosting, y mantenimiento. Las actualizaciones de la página se cotizan por separado.</p></div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="contact" id="contacto" aria-labelledby="t-contact">
+  <div class="marquee" role="group" aria-label="Pantallas de ejemplo de un sitio consultivo">
+    <div class="marquee__track">
+      <img src="img/ui-phone-home.jpg" width="450" height="600" alt="Pantalla de teléfono con una landing consultiva en azul y amarillo" loading="lazy"><img src="img/ui-landing.jpg" width="900" height="600" alt="Landing de escritorio sobre fondo negro con titular grande y tarjetas de color" loading="lazy"><img src="img/ui-palette.jpg" width="600" height="600" alt="Hoja de paleta de colores y tipografía de una marca" loading="lazy"><img src="img/ui-sitemap.jpg" width="900" height="600" alt="Mapa del sitio con landing, dos flujos y una interna de socios" loading="lazy"><img src="img/ui-phone-flow.jpg" width="450" height="600" alt="Pantalla de teléfono con opciones para consultar información" loading="lazy"><img src="img/ui-journey.jpg" width="900" height="600" alt="Recorrido del visitante: llega, entiende, elige y escribe" loading="lazy"><img src="img/ui-org.jpg" width="600" height="600" alt="Organigrama de una empresa para la página interna de socios" loading="lazy"><img src="img/ui-gantt.jpg" width="900" height="600" alt="Cronograma de cuatro semanas con dos revisiones y la publicación" loading="lazy"><img src="img/ui-pricing.jpg" width="600" height="600" alt="Pantalla de precios con los planes de marca y de sitio web" loading="lazy"><img src="img/ui-phone-home.jpg" width="450" height="600" alt="" data-x="Pantalla de teléfono con una landing consultiva en azul y amarillo" loading="lazy" aria-hidden="true"><img src="img/ui-landing.jpg" width="900" height="600" alt="" data-x="Landing de escritorio sobre fondo negro con titular grande y tarjetas de color" loading="lazy" aria-hidden="true"><img src="img/ui-palette.jpg" width="600" height="600" alt="" data-x="Hoja de paleta de colores y tipografía de una marca" loading="lazy" aria-hidden="true"><img src="img/ui-sitemap.jpg" width="900" height="600" alt="" data-x="Mapa del sitio con landing, dos flujos y una interna de socios" loading="lazy" aria-hidden="true"><img src="img/ui-phone-flow.jpg" width="450" height="600" alt="" data-x="Pantalla de teléfono con opciones para consultar información" loading="lazy" aria-hidden="true"><img src="img/ui-journey.jpg" width="900" height="600" alt="" data-x="Recorrido del visitante: llega, entiende, elige y escribe" loading="lazy" aria-hidden="true"><img src="img/ui-org.jpg" width="600" height="600" alt="" data-x="Organigrama de una empresa para la página interna de socios" loading="lazy" aria-hidden="true"><img src="img/ui-gantt.jpg" width="900" height="600" alt="" data-x="Cronograma de cuatro semanas con dos revisiones y la publicación" loading="lazy" aria-hidden="true"><img src="img/ui-pricing.jpg" width="600" height="600" alt="" data-x="Pantalla de precios con los planes de marca y de sitio web" loading="lazy" aria-hidden="true">
+    </div>
+  </div>
+  <h2 id="t-contact" data-reveal>Para más información</h2>
+  <p class="contact__mail" data-reveal style="--i:1"><a href="mailto:francescoj200@gmail.com">francescoj200@gmail.com</a></p>
+  <p class="small">Bogotá, Colombia</p>
+</section>
+
+</main>
+
+<!-- ============ FOOTER: tiles ============ -->
+<footer class="foot">
+  <div class="tiles tiles--foot">
+    <div class="ft ft--a"><p>Sitios consultivos, diseñados con calma y publicados en tu dominio.</p><small>© 2026 Diseño UX, Bogotá. Textos y precios de la propuesta vigente.</small></div>
+    <nav class="ft ft--b" aria-label="Pie"><a href="#que-hago">Qué hago</a><a href="#armar">Arma tu sitio</a><a href="#proceso">Proceso</a><a href="#precios">Precios</a><a href="#preguntas">Preguntas</a></nav>
+    <div class="ft ft--c"><p>Bogotá, Colombia</p><p class="time" id="hora">—</p></div>
+    <div class="ft ft--d"><a href="mailto:francescoj200@gmail.com">francescoj200@gmail.com</a></div>
+    <div class="ft ft--e"><p class="mark">diseño ux</p></div>
+    <div class="ft ft--f"><p>4 semanas, 2 revisiones, 50 % y 50 %.</p></div>
+  </div>
+</footer>
+
+<script src="script.js" defer></script>
+</body>
+</html>

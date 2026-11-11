@@ -1,0 +1,355 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Diseño UX para web · Sitios consultivos en tu dominio · Bogotá</title>
+<meta name="description" content="Diseño y publico sitios web consultivos en el dominio de tu empresa: una landing, hasta dos flujos y versión móvil. Cuatro semanas, dos revisiones.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+
+<!-- ============ HERO ============ -->
+<header class="hero" id="inicio">
+  <div class="nav">
+    <a class="logo" href="#inicio"><span class="logo__mark" aria-hidden="true"></span>Diseño UX</a>
+    <nav aria-label="Secciones">
+      <a class="nav__opt" href="#incluye">Qué incluye</a>
+      <a class="nav__opt" href="#proceso">Proceso</a>
+      <a href="#precios">Precios</a>
+      <a class="nav__opt" href="#preguntas">Preguntas</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </div>
+
+  <div class="hero__grid">
+    <div class="hero__copy">
+      <h1><span>Sitios web</span> <span>que orientan.</span></h1>
+      <p class="lede" data-reveal>Soy diseñador UX en Bogotá. Diseño y publico sitios consultivos en el dominio de tu empresa: una landing, hasta dos flujos y versión móvil. Sin pagos ni carrito.</p>
+      <a class="arrow" data-reveal style="--i:1" href="#incluye">Ver qué incluye <span aria-hidden="true">↓</span></a>
+
+      <ul class="facts">
+        <li data-reveal style="--i:1"><strong>4 semanas</strong><span>Publicado en la semana 4.</span></li>
+        <li data-reveal style="--i:2"><strong>2 revisiones</strong><span>La primera en la semana 1, la última en la semana 3.</span></li>
+        <li data-reveal style="--i:3"><strong>2 pagos</strong><span>50 % para empezar y 50 % para publicar.</span></li>
+      </ul>
+    </div>
+
+    <div class="stage" data-reveal style="--i:1" role="group" aria-label="Arma tu sitio: configurador en vivo">
+      <div class="stage__art">
+        <div class="art" id="art" data-ui data-mode="narrow" data-flows="0" data-socios="off" data-brand="mine">
+          <div class="art__bar">
+            <span class="art__logo"></span>
+            <nav class="art__tabs" aria-hidden="true">
+              <b>Inicio</b>
+              <span data-show="f1">Servicios</span>
+              <span data-show="f2">Equipo</span>
+              <span data-show="socios">Socios</span>
+            </nav>
+          </div>
+          <div class="art__hero">
+            <p class="art__h">Tu empresa, explicada con claridad</p>
+            <p class="art__p">Lo que haces, para quién y cómo contactarte, en una sola página.</p>
+          </div>
+          <div class="art__tiles">
+            <span>Qué hacemos</span><span>Para quién</span><span>Cómo contactarnos</span>
+          </div>
+          <div class="art__sec" data-show="f1">
+            <p class="art__h2">Servicios</p>
+            <ul><li>Consultoría</li><li>Acompañamiento</li><li>Capacitación</li></ul>
+          </div>
+          <div class="art__sec" data-show="f2">
+            <p class="art__h2">Equipo</p>
+            <ul><li>Dirección</li><li>Operaciones</li><li>Atención</li></ul>
+          </div>
+          <div class="art__sec" data-show="socios">
+            <p class="art__h2">Socios</p>
+            <div class="org"><i></i><i></i><i></i><i></i></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="cfg" data-ui>
+        <div class="cfg__grp">
+          <p class="cfg__lab" id="l-flows">Flujos adicionales</p>
+          <div class="seg" role="radiogroup" aria-labelledby="l-flows" data-ctl="flows">
+            <button type="button" role="radio" aria-checked="true" data-v="0">Ninguno</button>
+            <button type="button" role="radio" aria-checked="false" data-v="1">1</button>
+            <button type="button" role="radio" aria-checked="false" data-v="2">2</button>
+          </div>
+        </div>
+        <div class="cfg__grp">
+          <p class="cfg__lab" id="l-socios">Interna para socios</p>
+          <div class="seg" data-ctl="socios">
+            <button type="button" role="switch" aria-checked="false" aria-labelledby="l-socios"><span class="sw"></span><span class="sw__t">Sin interna</span></button>
+          </div>
+        </div>
+        <div class="cfg__grp">
+          <p class="cfg__lab" id="l-mode">Pantalla</p>
+          <div class="seg" role="radiogroup" aria-labelledby="l-mode" data-ctl="mode">
+            <button type="button" role="radio" aria-checked="true" data-v="narrow">Celular</button>
+            <button type="button" role="radio" aria-checked="false" data-v="wide">Escritorio</button>
+          </div>
+        </div>
+        <div class="cfg__grp">
+          <p class="cfg__lab" id="l-brand">Marca</p>
+          <div class="seg" role="radiogroup" aria-labelledby="l-brand" data-ctl="brand">
+            <button type="button" role="radio" aria-checked="true" data-v="mine">Ya la tengo</button>
+            <button type="button" role="radio" aria-checked="false" data-v="basic">Básica</button>
+            <button type="button" role="radio" aria-checked="false" data-v="new">Nueva</button>
+          </div>
+        </div>
+        <p class="cfg__total"><span id="b-note">Sitio en dos pagos de $1.250.000</span><strong id="b-total">$2.500.000</strong></p>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<!-- ============ QUÉ INCLUYE ============ -->
+<section class="feat" id="incluye" aria-labelledby="t-feat">
+  <h2 id="t-feat" data-reveal>Qué incluye</h2>
+  <div class="cells">
+
+    <article class="cell">
+      <div class="cell__txt" data-reveal>
+        <h3>Una landing que explica</h3>
+        <p>La página principal presenta a tu empresa: qué haces, para quién y cómo contactarte, en una sola pantalla.</p>
+      </div>
+      <figure data-reveal style="--i:1" class="cell__fr dock-r">
+        <img src="img/ui-landing.jpg" width="900" height="600" alt="Landing de escritorio sobre fondo negro con titular grande y tarjetas de color" loading="lazy">
+      </figure>
+    </article>
+
+    <article class="cell">
+      <div class="cell__txt" data-reveal>
+        <h3>Hasta dos flujos</h3>
+        <p>Cada flujo adicional separa la información para consultar o dividir contenidos, y que cada visitante encuentre lo suyo.</p>
+      </div>
+      <div class="cell__fr dock-l" data-reveal style="--i:1">
+        <div class="ui sitemap" data-ui>
+          <p class="ui__title">Mapa del sitio</p>
+          <ul>
+            <li><span class="node node--dark">Landing principal</span>
+              <ul>
+                <li><span class="node">Flujo 1: consultar</span></li>
+                <li><span class="node">Flujo 2: dividir</span></li>
+                <li><span class="node node--opt">Interna de socios</span></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </article>
+
+    <article class="cell">
+      <div class="cell__txt" data-reveal>
+        <h3>Primero el celular</h3>
+        <p>El diseño nace para móvil y después se adapta a pantallas grandes.</p>
+      </div>
+      <figure data-reveal style="--i:1" class="cell__fr dock-r cell__fr--phone">
+        <img src="img/ui-phone-home.jpg" width="450" height="600" alt="Pantalla de teléfono con una landing consultiva en azul y amarillo" loading="lazy">
+      </figure>
+    </article>
+
+    <article class="cell">
+      <div class="cell__txt" data-reveal>
+        <h3>Una interna para socios</h3>
+        <p>Opcional: una página con el contacto de tus socios o el organigrama de tu empresa.</p>
+      </div>
+      <figure data-reveal style="--i:1" class="cell__fr dock-l cell__fr--sq">
+        <img src="img/ui-org.jpg" width="600" height="600" alt="Organigrama de una empresa para la página interna de socios" loading="lazy">
+      </figure>
+    </article>
+
+    <article class="cell">
+      <div class="cell__txt" data-reveal>
+        <h3>Con tu marca o con una nueva</h3>
+        <p>Uso tu manual de marca y tus logos en SVG. Si no los tienes, los ordeno o creo la marca completa.</p>
+      </div>
+      <figure data-reveal style="--i:1" class="cell__fr dock-r cell__fr--sq">
+        <img src="img/ui-palette.jpg" width="600" height="600" alt="Hoja de paleta de colores y tipografía de una marca" loading="lazy">
+      </figure>
+    </article>
+
+    <article class="cell">
+      <div class="cell__txt" data-reveal>
+        <h3>En línea en tu dominio</h3>
+        <p>Se publica en el dominio de tu empresa en cuatro semanas, con dos revisiones de por medio.</p>
+      </div>
+      <figure data-reveal style="--i:1" class="cell__fr dock-l">
+        <img src="img/ui-gantt.jpg" width="900" height="600" alt="Cronograma de cuatro semanas con dos revisiones y la publicación" loading="lazy">
+      </figure>
+    </article>
+
+  </div>
+</section>
+
+<!-- ============ PROCESO ============ -->
+<section class="how" id="proceso" aria-label="Proceso de trabajo">
+  <div class="how__clause" data-reveal>
+    <h2 id="clause" aria-live="polite">Me entregas tu información.</h2>
+    <p id="clause-note" class="how__note">Aportas el manual de marca, los logos en SVG, la paleta, la información de tu empresa y el dominio. Con el 50 % empiezo.</p>
+  </div>
+
+  <div class="how__frag" data-reveal style="--i:1">
+    <article class="card on" data-s="0" data-ui>
+      <header><b>Tu sitio web</b><span class="chip">Recibiendo</span></header>
+      <ul class="check">
+        <li class="on">Manual de marca</li>
+        <li class="on">Logos en SVG</li>
+        <li class="on">Paleta de colores</li>
+        <li>Información de la empresa</li>
+      </ul>
+      <footer><span class="box on"></span>50 % para empezar</footer>
+    </article>
+    <article class="card" data-s="1" data-ui aria-hidden="true">
+      <header><b>Tu sitio web</b><span class="chip chip--dark">Revisión 1 de 2</span></header>
+      <div class="prev"><i></i><i></i><i class="w"></i></div>
+      <footer>Comentarios de la semana 1</footer>
+    </article>
+    <article class="card" data-s="2" data-ui aria-hidden="true">
+      <header><b>Tu sitio web</b><span class="chip chip--dark">Revisión 2 de 2</span></header>
+      <ul class="check">
+        <li class="on">Primera revisión</li>
+        <li class="now">Última revisión</li>
+        <li>Publicación</li>
+      </ul>
+      <div class="bar"><i style="width:72%"></i></div>
+    </article>
+    <article class="card card--light" data-s="3" data-ui aria-hidden="true">
+      <header><b>Tu sitio web</b><span class="chip chip--ok">Publicado</span></header>
+      <p class="url">tudominio.co</p>
+      <ul class="check">
+        <li class="on">Revisión 1</li>
+        <li class="on">Revisión 2</li>
+        <li class="on">50 % restante pagado</li>
+      </ul>
+    </article>
+  </div>
+
+  <div class="how__ctl">
+    <input type="range" id="stage" min="0" max="3" step="1" value="0" aria-label="Etapa del proceso" aria-valuetext="Información">
+    <ul class="names">
+      <li><button type="button" data-s="0" aria-current="true">Información</button></li>
+      <li><button type="button" data-s="1">Semana 1</button></li>
+      <li><button type="button" data-s="2">Semana 3</button></li>
+      <li><button type="button" data-s="3">Semana 4</button></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ PRECIOS ============ -->
+<section class="price" id="precios" aria-labelledby="t-price">
+  <div class="plans">
+    <h2 id="t-price" class="plans__h" data-reveal>Precios</h2>
+
+    <ul class="plans__labels" aria-hidden="true">
+      <li>Qué recibes</li>
+      <li>Versión móvil</li>
+      <li>Interna de socios</li>
+      <li>Logos en SVG</li>
+      <li>Manual de marca</li>
+      <li>Plataforma, voz y tono</li>
+      <li>Cómo se paga</li>
+    </ul>
+
+    <section class="plan plan--rec" aria-labelledby="p-web" data-reveal>
+      <header><h3 id="p-web">Sitio web</h3><p class="plan__price">$2.500.000 <small>COP</small></p></header>
+      <dl>
+        <div><dt>Qué recibes</dt><dd>Landing y hasta 2 flujos</dd></div>
+        <div><dt>Versión móvil</dt><dd>Incluida</dd></div>
+        <div><dt>Interna de socios</dt><dd>Opcional</dd></div>
+        <div><dt>Logos en SVG</dt><dd>Los aportas tú</dd></div>
+        <div><dt>Manual de marca</dt><dd>Lo aportas tú</dd></div>
+        <div><dt>Plataforma, voz y tono</dt><dd>No incluidos</dd></div>
+        <div><dt>Cómo se paga</dt><dd>50 % y 50 %</dd></div>
+      </dl>
+    </section>
+
+    <section class="plan" aria-labelledby="p-basic" data-reveal style="--i:1">
+      <header><h3 id="p-basic">Marca básica</h3><p class="plan__price">$1.500.000 <small>COP</small></p></header>
+      <dl>
+        <div><dt>Qué recibes</dt><dd>Logos y manual básicos</dd></div>
+        <div><dt>Versión móvil</dt><dd>No incluida</dd></div>
+        <div><dt>Interna de socios</dt><dd>No incluida</dd></div>
+        <div><dt>Logos en SVG</dt><dd>Estilizados</dd></div>
+        <div><dt>Manual de marca</dt><dd>Básico</dd></div>
+        <div><dt>Plataforma, voz y tono</dt><dd>No incluidos</dd></div>
+        <div><dt>Cómo se paga</dt><dd>Aparte del sitio</dd></div>
+      </dl>
+    </section>
+
+    <section class="plan" aria-labelledby="p-full" data-reveal style="--i:2">
+      <header><h3 id="p-full">Marca completa</h3><p class="plan__price">desde $2.500.000 <small>COP</small></p></header>
+      <dl>
+        <div><dt>Qué recibes</dt><dd>Marca desde cero</dd></div>
+        <div><dt>Versión móvil</dt><dd>No incluida</dd></div>
+        <div><dt>Interna de socios</dt><dd>No incluida</dd></div>
+        <div><dt>Logos en SVG</dt><dd>Nuevos</dd></div>
+        <div><dt>Manual de marca</dt><dd>Completo</dd></div>
+        <div><dt>Plataforma, voz y tono</dt><dd>Incluidos</dd></div>
+        <div><dt>Cómo se paga</dt><dd>Aparte del sitio</dd></div>
+      </dl>
+    </section>
+  </div>
+  <p class="price__note" data-reveal>Precios en pesos colombianos. Dominio, hosting y mantenimiento no están incluidos.</p>
+</section>
+
+<!-- ============ PREGUNTAS ============ -->
+<section class="faq" id="preguntas" aria-labelledby="t-faq">
+  <div class="faq__list">
+    <h2 id="t-faq" class="faq__h">Preguntas</h2>
+    <ul class="q">
+      <li class="is-open" data-reveal style="--i:1">
+        <button type="button" aria-expanded="true"><i class="dot" aria-hidden="true"></i>¿Y si no tengo manual de marca ni logos en SVG?</button>
+        <div class="q__a"><p>Hay un servicio de acondicionamiento básico de marca por $1.500.000: estilizo tus logos en SVG, armo un manual de marca básico y te entrego un listado de deudas técnicas. Si prefieres crear la marca desde cero, la creación completa parte de $2.500.000.</p></div>
+      </li>
+      <li data-reveal style="--i:2">
+        <button type="button" aria-expanded="false"><i class="dot" aria-hidden="true"></i>¿Qué necesito aportar?</button>
+        <div class="q__a"><p>El manual de marca, los logos en SVG, la paleta de colores, toda la información de tu empresa y el acceso al dominio donde publicaré el sitio.</p></div>
+      </li>
+      <li data-reveal style="--i:0">
+        <button type="button" aria-expanded="false"><i class="dot" aria-hidden="true"></i>¿Cuántas revisiones incluye?</button>
+        <div class="q__a"><p>Dos. La primera llega en la semana 1 y la última en la semana 3, para dejar la semana 4 libre para los últimos ajustes y la publicación.</p></div>
+      </li>
+      <li data-reveal style="--i:1">
+        <button type="button" aria-expanded="false"><i class="dot" aria-hidden="true"></i>¿Cómo se paga?</button>
+        <div class="q__a"><p>Empezamos con el 50 %. El sitio se publica cuando está pagado el 50 % restante.</p></div>
+      </li>
+      <li data-reveal style="--i:2">
+        <button type="button" aria-expanded="false"><i class="dot" aria-hidden="true"></i>¿Qué es una deuda técnica?</button>
+        <div class="q__a"><p>Es el listado de mejoras que no se pueden abarcar porque el presupuesto del sitio no las cubre. Quedan escritas para que las retomes cuando quieras.</p></div>
+      </li>
+      <li data-reveal style="--i:0">
+        <button type="button" aria-expanded="false"><i class="dot" aria-hidden="true"></i>¿Qué no incluye?</button>
+        <div class="q__a"><p>Más de dos flujos adicionales, más de dos revisiones, funciones transaccionales como pagos o carrito, trabajo de marca que no hayas contratado, dominio y hosting, y mantenimiento. Las actualizaciones de la página se cotizan por separado.</p></div>
+      </li>
+    </ul>
+  </div>
+  <div class="faq__pane" id="pane" aria-live="polite"></div>
+</section>
+
+<!-- ============ CONTACTO ============ -->
+<section class="contact" id="contacto" aria-labelledby="t-contact">
+  <h2 id="t-contact" class="contact__q" data-reveal>Para más información</h2>
+  <p class="contact__mail" data-reveal style="--i:1"><a href="mailto:francescoj200@gmail.com">francescoj200@gmail.com</a></p>
+  <p class="contact__city" data-reveal style="--i:2">Bogotá, Colombia</p>
+</section>
+
+</main>
+
+<footer class="foot">
+  <p>Sitios consultivos en tu dominio</p>
+  <nav aria-label="Pie"><a href="#incluye">Qué incluye</a><a href="#proceso">Proceso</a><a href="#precios">Precios</a><a href="#preguntas">Preguntas</a></nav>
+  <p class="foot__r">2026 · Textos y precios de la propuesta vigente</p>
+</footer>
+
+<script src="script.js" defer></script>
+</body>
+</html>
